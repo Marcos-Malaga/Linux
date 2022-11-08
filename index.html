@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,160 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Title</h1>
-</body>
-</html>
+<!--Tema 5 -->
+    <h1>Lenguaje de Marcas</h1>
+    <h2>Tema 5</h2>
+    <h3>Formularios y Tablas</h3>
+    <table>
+        <caption>Tabla</caption>
+        <colgroup>
+        <col 
+       span="3" style="background-color:rgb(214, 214, 214) ;"
+        </colgroup>
+        <colgroup>
+            <col style="background-color:rgb(191, 240, 193) ;"
+        </colgroup>
+        <colgroup>
+            <col style="background-color:rgb(248, 201, 101) ;"
+        </colgroup>
+        <colgroup>
+            <col style="background-color:rgb(253, 140, 140) ;"
+        </colgroup>
+        <colgroup>
+            <col style="background-color:rgb(191, 240, 193) ;"
+        </colgroup>
+        <colgroup>
+            <col style="background-color:rgb(253, 140, 140) ;"
+        </colgroup>
+        <colgroup>
+            <col span="5" style="background-color:rgb(67, 161, 0) ;"
+        </colgroup>
+
+
+
+        
+        <thead>
+            <tr>
+                <th>Equipos</th>
+                <th>Pts.</th>
+                <th>J.</th>
+                <th>G.</th>
+                <th>E.</th>
+                <th>P.</th>
+                <th>F.</th>
+                <th>C.</th>
+                <th colspan="5">Últimos 5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Real Madrid</td>
+                <td>31</td>
+                <td>11</td>
+                <td>10</td>
+                <td>1</td>
+                <td>0</td>
+                <td>28</td>
+                <td>9</td>
+                <td>⚪</td>
+                <td>⚪</td>
+                <td>⚪</td>
+                <td>⚪</td>
+                <td>⚪</td>
+            </tr>
+            <tr>
+                <td>Barcelona</td>
+                <td>28</td>
+                <td>11</td>
+                <td>9</td>
+                <td>1</td>
+                <td>1</td>
+                <td>28</td>
+                <td>4</td>
+                <td>⚪</td>
+                <td>⚪</td>
+                <td>⚪</td>
+                <td>⚪</td>
+                <td>⚪</td>            </tr>
+            <tr>
+                <td>Atético</td>
+                <td>23</td>
+                <td>11</td>
+                <td>9</td>
+                <td>1</td>
+                <td>1</td>
+                <td>18</td>
+                <td>9</td>
+                <td>⚪</td>
+                <td>⚪</td>
+                <td>⚪</td>
+                <td>⚪</td>
+                <td>⚪</td>            </tr>
+            <tr>
+                <td>R. Sociedad</td>
+                <td>22</td>
+                <td>11</td>
+                <td>10</td>
+                <td>1</td>
+                <td>0</td>
+                <td>28</td>
+                <td>9</td>
+                <td>⚪</td>
+                <td>⚪</td>
+                <td>⚪</td>
+                <td>⚪</td>
+                <td>⚪</td>            </tr>
+
+            </table>
+            <br>
+            <hr>
+            <br>
+            <form action="proceso.php" method="post">
+                <fieldset>
+                    <legend>Juega</legend>
+                Equipo 1<input type="text" name=" equipo1">
+                Equipo 2<input type="text" name=" equipo2">
+
+                <p>
+                    <input type="radio" name="victoria" value="v">Victoria
+                    <input type="radio" name="empate" value="e">Empate
+                    <input type="radio" name="derrota" value="d">Derrota
+                </p>
+                <input type="checkbox" name="Victoria"> Victoria
+                <input type="checkbox" name="Empate" checked> Empate
+                <input type="checkbox" name="Derrota"> Derrota
+                <br>
+                <hr>
+                <select name="opciones" size="6">
+                    <option value="1">La Liga</option>
+                    <option value="2">Premier League</option>
+                    <option value="3">Champions League</option>
+                    <option value="4">Bundesliga</option>
+                    <option value="5">Liga 1</option>
+                    <option value="6">Serie A</option>
+
+                </select>
+            </fieldset>
+
+                <br>
+                <fieldset>
+                    <legend>Información personal</legend>
+                Ususario <input type="email" name="password">
+                <br>
+                <br>
+                Contraseña <input type="password" name="password">
+                <br>
+                <br>
+                Comentario <textarea></textarea>
+                 </fieldset>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                    <input type="button" value="Juega"
+                    onclick="alert('¡Premio!')">
+                </p>
+
+            </form>
+            </body>
+            </html>
+           
